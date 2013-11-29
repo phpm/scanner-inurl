@@ -1,7 +1,8 @@
 = INTRODUÇÃO =
 SCANNER INURL 1.0 
 
-È uma ferramenta feita em PHP, que utiliza o motor de busca GOOGLE, para filtrar resultadas de acordo com os parâmetros passados.
+É uma ferramenta feita em PHP, que utiliza o motor de busca GOOGLE, para filtrar resultadas de acordo com os parâmetros passados.
+Deve ser usado em terminal se for a versão console.
 
 Parâmetros para filtro (Dorks) de URL's utilisa-se operadores especiais do Google. 
 
@@ -13,18 +14,13 @@ Parâmetros para filtro (Dorks) de URL's utilisa-se operadores especiais do Goog
 
 = Necessário para execução do aplicativo =
 
-PHP Version	5.4.7
-php5-curl	LIB
-cURL support	enabled
-cURL Information	7.24.0
-Apache	2.4
-allow_url_fopen	 On
-Motor de busca	 GOOGLE
-Permissão	Leitura & Escrita
-
-
-
-
+||Versão PHP||	5.4.7||
+||Apache	||2.4||
+||versão cURL versão||	7.24.0||
+||LIB||	php5-curl||
+||cURL suporte||	enabled||
+||PHP allow_url_fopen||	 On||
+||Permissão||	Leitura & Escrita||
 
 = Details =
 
