@@ -11,6 +11,20 @@ Parâmetros para filtro (Dorks) de URL's utilisa-se operadores especiais do Goog
 
  -  [http://blog.inurl.com.br/2011/01/introducao-usando-o-google-para-se.html Usando o Google para se defender de ataques:]
 
+= Necessário para execução do aplicativo =
+
+PHP Version	5.4.7
+php5-curl	LIB
+cURL support	enabled
+cURL Information	7.24.0
+Apache	2.4
+allow_url_fopen	 On
+Motor de busca	 GOOGLE
+Permissão	Leitura & Escrita
+
+
+
+
 
 = Details =
 
