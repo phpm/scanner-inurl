@@ -52,7 +52,6 @@ inurl:/midia/index.php?id= //Toda url que contenha "/midia/index.php?id="
 
 ||Sistema operacional||	LINUX||
 ||Versão PHP||	5.4.7||
-||Apache	||2.4||
 ||versão cURL versão||	7.24.0||
 ||LIB||	php5-curl||
 ||cURL suporte||	enabled||
@@ -64,7 +63,7 @@ $sudo apt-get update
 
 Em seguida instale os seguintes programas: 
 
-$sudo apt-get install apache2 php5  php5-curl 
+$sudo apt-get install php5  php5-curl 
 
 OBS:_O script deve ser executado em um terminal._
 
