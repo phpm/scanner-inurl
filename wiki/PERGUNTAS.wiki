@@ -1,0 +1,20 @@
+= INTRODUÇÃO =
+SCANNER INURL 1.0 
+
+È uma ferramenta feita em PHP, que utiliza o motor de busca GOOGLE, para filtrar resultadas de acordo com os parâmetros passados.
+
+Parâmetros para filtro (Dorks) de URL's utilisa-se operadores especiais do Google. 
+
+ -  [https://support.google.com/websearch/answer/136861?hl=pt-BR Operadores de pesquisa]
+
+ -  [http://blog.inurl.com.br/2011/01/o-que-e-google-hacking.html O que é Google Hacking ?]
+
+ -  [http://blog.inurl.com.br/2011/01/introducao-usando-o-google-para-se.html Usando o Google para se defender de ataques:]
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
