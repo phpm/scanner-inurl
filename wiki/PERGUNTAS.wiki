@@ -103,3 +103,10 @@ php botConsole.php hosts #Lista de hosts do google.";
 
 
 }}}
+
+
+=Exemplo de execução=
+
+===SCANNER INURL para encontrar falhas / Mybb Ajaxfs Plugin Sql Injection vulnerability.===
+
+[http://blog.inurl.com.br/2013/11/usando-scanner-inurl-para-encontrar_27.html]
